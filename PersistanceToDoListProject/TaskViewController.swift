@@ -27,21 +27,21 @@ class TaskViewController: UIViewController
     
     @objc func deleteTask()
     {
-        guard let count = UserDefaults().removeObject(forKey: "count") as? Int else
-        {
-            return
-        }
-        
-        let newCount = count - 1
-        
-        UserDefaults().set(newCount,forKey: "count")
-        
-        // Save the tasks
-        UserDefaults().set(taskLabel,forKey: "task_\(newCount)")
-        
-        deletionHandler?()
-        
-        navigationController?.popViewController(animated: true)
+//        guard let count = UserDefaults().removeObject(forKey: "count") as? Int else
+//        {
+//            return
+//        }
+//
+//        let newCount = count - 1
+//
+//        UserDefaults().set(newCount,forKey: "count")
+//
+//        // Save the tasks
+//        UserDefaults().set(taskLabel,forKey: "task_\(newCount)")
+//
+//        deletionHandler?()
+//
+//        navigationController?.popViewController(animated: true)
     }
   
 }

@@ -34,6 +34,9 @@ class TaskTableViewController: UITableViewController
             
             // Get all the current saved tasks when the view loads
             updateTasks()
+            
+            // Reload our data
+//            tableView.reloadData()
         }
         
     }
@@ -93,13 +96,13 @@ class TaskTableViewController: UITableViewController
         // Deselects the cell
         tableView.deselectRow(at: indexPath, animated: true)
         
-        let entryTaskViewController = storyboard?.instantiateViewController(withIdentifier: "task") as! TaskViewController
+        let taskViewController = storyboard?.instantiateViewController(withIdentifier: "task") as! TaskViewController
         
-        entryTaskViewController.title = "View Task"
+        taskViewController.title = "View Task"
         
-        entryTaskViewController.task = tasks[indexPath.row]
+        taskViewController.task = tasks[indexPath.row]
         
-        navigationController?.pushViewController(entryTaskViewController, animated: true)
+        navigationController?.pushViewController(taskViewController, animated: true)
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int

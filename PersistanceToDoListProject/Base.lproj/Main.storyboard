@@ -23,6 +23,12 @@
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="3dt-jS-qmA" id="GQn-TH-Xeq">
                                     <rect key="frame" x="0.0" y="0.0" width="430" height="43.666667938232422"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nha-DI-YtT">
+                                            <rect key="frame" x="361" y="6" width="49" height="31"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        </switch>
+                                    </subviews>
                                 </tableViewCellContentView>
                             </tableViewCell>
                         </prototypes>
@@ -118,7 +124,7 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="label" destination="TTu-nV-Ss8" id="in2-75-ggb"/>
+                        <outlet property="taskLabel" destination="TTu-nV-Ss8" id="X3G-JN-wAi"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HX7-ki-3YS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
